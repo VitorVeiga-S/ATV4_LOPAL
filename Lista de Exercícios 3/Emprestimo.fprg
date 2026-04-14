@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-14 03:34:44 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwODQ3OzIwMjYtMDQtMTM7IjExOjE5OjQ0ICI7Mjg2Mw=="/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwODQ3OzIwMjYtMDQtMTQ7IjAzOjM0OjQ0ICI7NzsyOTc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nomeSujo, possuiFiador" type="String" array="False" size=""/>
+            <declare name="salario" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe o sal&#225;rio do cliente: &quot;" newline="True"/>
+            <input variable="salario"/>
+            <output expression="&quot;Possui fiador? (s/n): &quot;" newline="True"/>
+            <input variable="possuiFiador"/>
+            <output expression="&quot;Tem nome sujo no Serasa? (s/n): &quot;" newline="True"/>
+            <input variable="nomeSujo"/>
+            <if expression="((salario &gt; 2000) or (possuiFiador = &quot;s&quot;)) and (not (nomeSujo = &quot;s&quot;))">
+                <then>
+                    <output expression="&quot;Empr&#233;stimo aprovado.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Emprestimo negado.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

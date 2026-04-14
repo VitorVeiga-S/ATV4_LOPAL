@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-14 04:08:24 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwODQ3OzIwMjYtMDQtMTM7IjExOjE5OjQ0ICI7Mjg2Mw=="/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwODQ3OzIwMjYtMDQtMTQ7IjA0OjA4OjI0ICI7ODsyOTc3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="eVIP, temCupom, parcelasAtrasadas" type="String" array="False" size=""/>
+            <declare name="valorCompra" type="Real" array="False" size=""/>
+            <declare name="cenarioA, cenarioB" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Informe o valor da compra: &quot;" newline="True"/>
+            <input variable="valorCompra"/>
+            <output expression="&quot;&#201; cliente VIP? (s/n): &quot;" newline="True"/>
+            <input variable="eVIP"/>
+            <output expression="&quot;Possui cupom? (s/n): &quot;" newline="True"/>
+            <input variable="temCupom"/>
+            <output expression="&quot;Tem parcelas atrasadas? (s/n): &quot;" newline="True"/>
+            <input variable="parcelasAtrasadas"/>
+            <if expression="(eVIP = &quot;s&quot; and valorCompra &gt; 500) or (temCupom = &quot;s&quot; and not (parcelasAtrasadas = &quot;s&quot;))">
+                <then>
+                    <output expression="&quot;Empr&#233;stimo aprovado.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Emprestimo negado.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

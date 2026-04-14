@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-14 02:44:25 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwODQ3OzIwMjYtMDQtMTM7IjExOjE5OjQ0ICI7Mjg2Mw=="/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwODQ3OzIwMjYtMDQtMTQ7IjAyOjQ0OjI1ICI7NjsyOTc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sabeJavaScript, sabePython" type="String" array="False" size=""/>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe a idade do canditato: &quot;" newline="True"/>
+            <input variable="idade"/>
+            <output expression="&quot;Sabe Java Script? (s/n) &quot;" newline="True"/>
+            <input variable="sabeJavaScript"/>
+            <output expression="&quot;Sabe Python? (s/n) &quot;" newline="True"/>
+            <input variable="sabePython"/>
+            <if expression="idade &gt;= 18 and sabeJavaScript = &quot;s&quot; or sabePython = &quot;s&quot;">
+                <then>
+                    <output expression="&quot;Curr&#237;culo aceito.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Curr&#237;culo recusado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
